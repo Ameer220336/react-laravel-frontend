@@ -25,7 +25,7 @@ export default function BasicDemo() {
     };
 
     useEffect(() => {
-        UserData.getUsersData().then(data => {
+        UserData.getUsers().then(data => {
             setUsers(data);
             setLoading(false);
         });
